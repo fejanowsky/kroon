@@ -1,0 +1,90 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000;
+}
+.video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%,-50%);
+}
+#kroon-logo {
+    position: relative;
+    z-index: 2000;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#kroon-logo:hover {
+    transform: scale(1.05);
+}
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    z-index: 200;
+}
+.language-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 200;
+    left: 0;
+}
+.language-dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.language-dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+#learn-more-title,
+#contact-title {
+    font-family: 'Titan One', cursive;
+    font-size: 2.8em;
+}
+#learn-more > div,
+#contact-us > div {
+    max-width: 100%;
+}
+#learn-more > div > button[aria-label],
+#contact-us > div > button[aria-label] {
+    color: #FF5733 !important;
+}
+
+.orange{
+    color: #FF5733 !important;
+}
+.modal-logo {
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 2000;
+}
+
+.modal-logo:hover {
+    transform: scale(1.05);
+}

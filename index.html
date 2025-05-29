@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Kroon Produções</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="font-family: 'Poppins', sans-serif; color: white; font-weight: 300;">
+    <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; overflow: hidden;">
+        <iframe 
+            src="https://player.vimeo.com/video/725301837?autoplay=1&muted=1&loop=1&background=1&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479" 
+            class="video-background"
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            title="Reel Kroon">
+        </iframe>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6);"></div>
+    </div>
+
+    <header style="position: fixed; top: 0; left: 0; width: 100%; display: flex; flex-direction: column; align-items: flex-start; padding: 20px 50px; z-index: 100;">        <img 
+            id="kroon-logo"
+            src="https://media.licdn.com/dms/image/v2/C4E0BAQG3v-VXjmrG_Q/company-logo_200_200/company-logo_200_200/0/1630645596572/kroon_logo?e=2147483647&v=beta&t=hRuqg6-afFTfjbz5YqeHMJ2pI-ykU9TuYCvAZLThalc" 
+            alt="Kroon Logo"
+        >
+        
+        <div class="language-dropdown" style="color: white; cursor: pointer;">
+            <div style="display: flex; align-items: center; gap: 10px; background-color: rgba(0,0,0,0.5); padding: 8px 12px; border-radius: 5px;">
+                🇧🇷 PT <i class="fas fa-chevron-down" style="margin-left: 5px"></i>
+            </div>            <div class="language-dropdown-content" style="opacity: 0.6;">
+                <a href="#" onclick="changeLanguage('cn')">
+                    🇨🇳 CN
+                </a>
+                <a href="#" onclick="changeLanguage('en')">
+                    🇺🇸 EN
+                </a>
+                <a href="#" onclick="changeLanguage('es')">
+                    🇪🇸 ES
+                </a>
+                <a href="#" onclick="changeLanguage('jp')">
+                    🇯🇵 JP
+                </a>
+                <a href="#" onclick="changeLanguage('pt')">
+                    🇧🇷 PT
+                </a>
+                <a href="#" onclick="changeLanguage('elf')">
+                    <span style="margin-right: 5px;">✧</span>
+                    ELF
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main style="position: relative; z-index: 10; text-align: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 id="main-title" style="font-family: 'Titan One', cursive; font-size: 4em; margin-bottom: 20px; max-width: 800px; line-height: 1.2; text-transform: uppercase; letter-spacing: 1px; color: #00c28b;">Crafting visual narratives with global recognition and intimate care</h1>
+        <p id="main-description" style="max-width: 600px; margin: 0 auto 40px; font-size: 1.2em; line-height: 1.6; color: #00c28b; font-weight: 300; letter-spacing: 0.5px;">
+            Transformando cada projeto em uma experiência única, onde a sofisticação global se encontra com o toque pessoal
+        </p>
+        <div style="display: flex; gap: 20px;">
+            <button id="contact-button" style="font-family: 'Titan One', cursive; background-color: #00c28b; color: white; border: 2px solid white; padding: 15px 30px; font-size: 1.1em; border-radius: 5px; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">
+                Contact us
+            </button>
+            <button id="learn-button" style="font-family: 'Titan One', cursive; background-color: #FF5733; color: white; border: 2px solid white; padding: 15px 30px; font-size: 1.1em; border-radius: 5px; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">
+                Learn More
+            </button>
+        </div>
+    </main>
+
+    <footer style="position: fixed; bottom: 20px; left: 0; width: 100%; text-align: center; z-index: 10;">
+    </footer>    <div id="learn-more" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); z-index: 1000; overflow-y: auto; padding: 50px 20px;">
+        <div style="max-width: 800px; margin: 0 auto; color: white; font-family: 'Poppins', sans-serif; position: relative;">
+            <button onclick="document.getElementById('learn-more').style.display = 'none'" style="position: absolute; top: 15px; right: 15px; background: transparent; border: none; color: #00c28b; font-size: 2.2em; cursor: pointer; line-height: 1; z-index: 1100;" aria-label="Fechar modal">&times;</button>            <img 
+                class="modal-logo"
+                src="https://media.licdn.com/dms/image/v2/C4E0BAQG3v-VXjmrG_Q/company-logo_200_200/company-logo_200_200/0/1630645596572/kroon_logo?e=2147483647&v=beta&t=hRuqg6-afFTfjbz5YqeHMJ2pI-ykU9TuYCvAZLThalc" 
+                alt="Kroon Logo"
+                onclick="window.location.reload()"
+            >
+            <h2 id="learn-more-title"style="text-align: center; color: #00c28b; margin-bottom: 30px;">SOBRE</h2>
+            
+            <p id="learn-more-p1" style="margin-bottom: 20px; text-align: justify;">
+                A gente acredita que toda história merece ser contada — desde os grandes lançamentos até aquele conteúdo feito na correria, mas com propósito. Adoramos desafios e estamos sempre prontos pra entregar produções com identidade, ritmo e muito cuidado, mesmo quando o tempo é curto ou o roteiro muda de última hora.
+            </p>
+            <p id="learn-more-p2" style="margin-bottom: 20px; text-align: justify;">
+                Nos projetos remotos, tivemos bastante sucesso e acabamos inspirando outras produções a seguirem por esse caminho. Criamos formatos novos, testamos ferramentas, conectamos gente do Brasil inteiro com a ajuda de uma rede de fornecedores que já virou parte da casa. Deu certo — e virou referência.
+            </p>
+            <div style="text-align:center; margin: 30px 0;">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/725301837?h=9fd8a6c315" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+        
+            <p id="learn-more-p5" style="margin-bottom: 20px; text-align: justify;">
+                Sabe aqueles vídeos internos, como treinamentos, eventos, videoaulas, apresentações e conteúdos sob medida para empresas? A gente faz e ainda coloca todo um toque especial neles.
+            </p>
+            <p id="learn-more-p4" style="margin-bottom: 20px; text-align: justify;">
+                Montamos nossas equipes com diversidade, porque sabemos que diferentes vivências geram ideias mais ricas, soluções mais humanas e histórias que falam com mais gente. Valorizamos olhares plurais e acreditamos em ambientes onde todo mundo tem voz.
+
+            <p id="learn-more-p6" style="margin-bottom: 20px; text-align: justify;">
+                A gente acompanha as novidades e usa inteligência artificial de forma responsável: pra acelerar o que pode, abrir espaço pra novas ideias e melhorar os processos. Mas sem esquecer que é gente que cria, que sente e que conecta. A IA ajuda — mas o olho no olho ainda manda muito.
+            </p>
+            <p id="learn-more-p7" style="margin-bottom: 20px; text-align: justify;">
+                Já atendemos marcas como <b style="color: #00c28b">Netflix</b>, <b style="color: #00c28b">Red Bull</b>, <b style="color: #00c28b">Amazon Music</b>, <b style="color: #00c28b">Acrilex</b>, <b style="color: #00c28b">MTV</b>, <b style="color: #00c28b">Paramount</b>, <b style="color: #00c28b">Nickelodeon</b>, <b style="color: #00c28b">Pabblo Vittar</b> e <b style="color: #00c28b">Coca-Cola</b>. Também tivemos a chance de trabalhar com <b style="color: #00c28b">Sadia</b>, <b style="color: #00c28b">Shell</b>, <b style="color: #00c28b">TikTok</b>, <b style="color: #00c28b">Brahma</b>, <b style="color: #00c28b">GNT</b>, <b style="color: #00c28b">Heineken</b>, <b style="color: #00c28b">Natura</b>, <b style="color: #00c28b">Bradesco</b>, <b style="color: #00c28b">Samsung</b>, <b style="color: #00c28b">Chery Motors</b>, <b style="color: #00c28b">Havaianas</b>, <b style="color: #00c28b">Globo</b>, <b style="color: #00c28b">Spotify</b>, <b style="color: #00c28b">Warner Music</b>, <b style="color: #00c28b">Universal Music</b>, <b style="color: #00c28b">Rock in Rio</b> e muitas outras.
+            </p>
+            <p style="margin-bottom: 20px; text-align: justify;">
+                Nosso destaque no mundo da comédia foi construído ao longo de mais de 10 anos. Produzimos programas como <b style="color: #00c28b">A Culpa é do Cabral</b>, <b style="color: #00c28b">República do Stand Up</b> e outros especiais que ajudaram a renovar o humor em todos os veículos. Além de produções completasm cuidamos de promos, conteúdos digitais e todos os deliverables em parceria com outras produtoras.
+            </p>
+            <p style="margin-bottom: 20px; text-align: justify;">
+                Lá no começo da nossa história, produzimos vídeos de backstage pro <b style="color: #00c28b">Meus Prêmios Nick</b>, da <b style="color: #00c28b">Nickelodeon</b>. Foi correria, confete, celebridade teen e muita gambiarra criativa. Foi ali que percebemos que o caminho da Kroon seria especial.
+            </p>            <p style="margin-bottom: 20px; text-align: center; color: #FF5733; font-weight: bold; font-size: 1.4em;">
+                Nosso compromisso segue firme: contar histórias que emocionam, informam, divertem — e, sempre que possível, arrancam um sorriso.
+            </p>
+
+            <br>
+
+            <p id="learn-more-portfolio" style="text-align: center; color: #00c28b; margin-top: 30px;"></p>
+        </div>
+    </div>    <div id="contact-us" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); z-index: 1000; overflow-y: auto; padding: 50px 20px;">
+        <div style="max-width: 800px; margin: 0 auto; color: white; font-family: 'Poppins', sans-serif; position: relative;">
+            <button onclick="document.getElementById('contact-us').style.display = 'none'" style="position: absolute; top: 15px; right: 15px; background: transparent; border: none; color: #00c28b; font-size: 2.2em; cursor: pointer; line-height: 1; z-index: 1100;" aria-label="Fechar modal">&times;</button>            <img 
+                class="modal-logo"
+                src="https://media.licdn.com/dms/image/v2/C4E0BAQG3v-VXjmrG_Q/company-logo_200_200/company-logo_200_200/0/1630645596572/kroon_logo?e=2147483647&v=beta&t=hRuqg6-afFTfjbz5YqeHMJ2pI-ykU9TuYCvAZLThalc" 
+                alt="Kroon Logo"
+                onclick="window.location.reload()"
+            >
+            <h2 id="contact-title"style="text-align: center; color: #00c28b; margin-bottom: 30px;">Entre em Contato</h2>
+            
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="https://wa.me/5511995554420" target="_blank" style="display: inline-block; text-decoration: none; margin: 20px;" class="orange">
+                    <div style="background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px; transition: all 0.3s ease;">
+                        <i class="fab fa-whatsapp" style="font-size: 3em; color: #00c28b; margin-bottom: 10px;"></i>
+                        <p style="color: white; margin: 10px 0;">WhatsApp</p>
+                        <p style="color: #FF5733;">+55 11 99555-4420</p>
+                    </div>
+                </a>
+                
+                <a href="mailto:contato@kroon.tv.br" style="display: inline-block; text-decoration: none; margin: 20px;">
+                    <div style="background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px; transition: all 0.3s ease;">
+                        <i class="far fa-envelope" style="font-size: 3em; color: #00c28b; margin-bottom: 10px;"></i>
+                        <p style="color: white; margin: 10px 0;">Email</p>
+                        <p style="color: #FF5733;">contato@kroon.tv.br</p>
+                    </div>
+                </a>
+            </div>
+            
+            <p style="text-align: center; font-size: 0.9em; color: rgba(255,255,255,0.7); font-style: italic; margin-top: 20px;">
+                <b>*Não estamos mais aceitando pombos correio devido a um incidente diplomático com uma coruja da concorrência.</b> 
+            </p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
